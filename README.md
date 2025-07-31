@@ -30,9 +30,15 @@ pip install transformers datasets
 ```
 - accelerate
 ```
-
+pip install accelerate
 ```
 - sentencepiece
-- tqdm scikit-learn
-- tensorboard
-- pandas
+```
+pip install sentencepiece
+```
+- 其他依赖
+```
+pip install tqdm scikit-learn
+pip install tensorboard
+pip install pandas
+```
