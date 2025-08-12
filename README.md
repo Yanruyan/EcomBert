@@ -42,3 +42,23 @@ pip install tqdm scikit-learn
 pip install tensorboard
 pip install pandas
 ```
+
+## Continue Pre-train
+### 训练概况
+cpt任务：mlm<br>
+训练语料：200万电商商品标题、评论数据<br>
+训练条件：4090单卡<br>
+epoch：2<br>
+训练时间：3小时<br>
+
+### cpt后模型与原生模型效果对比
+cpt模型相比原生模型，效果提升显著，如下：
+
+| 模型版本             | Average MLM loss | Perplexity |
+|------------------|----|--------|
+| 原生roberta-base   | 4.8544 | 128.3075 |
+| cpt-roberta-ecom | 2.0930 | 8.1090 |
+
+
+## Fine-tune
+
